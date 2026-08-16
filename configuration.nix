@@ -9,6 +9,9 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./modules/power.nix
+      ./modules/core-packages.nix
+      ./modules/prometheus.nix
+      ./modules/grafana.nix
     ];
 
   # Bootloader.
