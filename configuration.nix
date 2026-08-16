@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./modules/power.nix
     ];
 
   # Bootloader.
@@ -111,7 +112,7 @@
   #  wget
   ];
 
-  # 
+  # Limpar as generations antigas
   nix.gc = {
   automatic = true;
   dates = "weekly";
