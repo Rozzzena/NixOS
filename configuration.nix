@@ -12,6 +12,8 @@
       ./modules/core-packages.nix
       ./modules/prometheus.nix
       ./modules/grafana.nix
+      ./modules/torrent.nix
+      ./modules/jellyfin.nix
     ];
 
   # Bootloader.
@@ -154,11 +156,6 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
-  #Jellyfin
-  services.jellyfin = {
-	enable = true;
-	openFirewall = true;
-  };
   #Docker
   virtualisation.docker.enable = true;  
 
